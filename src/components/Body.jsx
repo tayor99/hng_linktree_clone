@@ -4,7 +4,7 @@ import github from "./Assets/icons/github.svg";
 
 const Body = () => {
   return (
-    <section>
+    <main>
       <div className="links">
         {links.map((link) => {
           return (
@@ -35,7 +35,7 @@ const Body = () => {
           <img src={github} alt="slack" />
         </a>
       </div>
-    </section>
+    </main>
   );
 };
 
