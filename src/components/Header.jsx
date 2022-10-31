@@ -1,4 +1,4 @@
-import profileImg from "./Assets/tayo.jpg";
+import profileImg from "../Assets/tayo.jpg";
 
 const Header = () => {
   return (

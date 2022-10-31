@@ -1,6 +1,6 @@
-import { links } from "./helper";
-import slack from "./Assets/icons/slack.svg";
-import github from "./Assets/icons/github.svg";
+import { links } from "../helper";
+import slack from "../Assets/icons/slack.svg";
+import github from "../Assets/icons/github.svg";
 
 const Body = () => {
   return (

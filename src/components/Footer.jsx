@@ -1,5 +1,5 @@
-import zuriLogo from "./Assets/Zuri.Internship_Logo.png";
-import I4G from "./Assets/i4g.png";
+import zuriLogo from "../Assets/Zuri.Internship_Logo.png";
+import I4G from "../Assets/i4g.png";
 
 const Footer = () => {
   return (
