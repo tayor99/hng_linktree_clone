@@ -1,11 +1,9 @@
-import Header from "./components/Header";
-import Body from "./components/Body";
 import Footer from "./components/Footer";
+import Profile from "./Pages/Profile";
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Body />
+      <Profile />
       <Footer />
     </div>
   );
