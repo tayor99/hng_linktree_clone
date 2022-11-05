@@ -7,16 +7,17 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Success");
+  };
   const handleChange = (e) => {
     setContactDetails({
       ...contactDetails,
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Success");
-  };
+
   return (
     <>
       <div className="contact__form">
