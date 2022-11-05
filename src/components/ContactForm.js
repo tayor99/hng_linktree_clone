@@ -1,8 +1,26 @@
+import { useState } from "react";
+
 const ContactForm = () => {
+  const [contactDetails, setContactDetails] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setContactDetails({
+      ...contactDetails,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Success");
+  };
   return (
     <>
       <div className="contact__form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="names">
             <div className="form-details firstName">
               <label htmlFor="first_name">First name</label>
@@ -11,6 +29,8 @@ const ContactForm = () => {
                 name="first_name"
                 id="first_name"
                 placeholder="Enter your first name"
+                onChange={handleChange}
+                value={contactDetails.first_name}
               />
             </div>
             <div className="form-details lastName">
@@ -20,6 +40,8 @@ const ContactForm = () => {
                 name="last_name"
                 id="last_name"
                 placeholder="Enter your last name"
+                onChange={handleChange}
+                value={contactDetails.last_name}
               />
             </div>
           </div>
@@ -30,6 +52,8 @@ const ContactForm = () => {
               name="email"
               id="email"
               placeholder="yourname@email.com"
+              onChange={handleChange}
+              value={contactDetails.email}
             />
           </div>
 
@@ -41,6 +65,8 @@ const ContactForm = () => {
               cols="30"
               rows="10"
               placeholder="Send me a message and I'll reply you as soon as possible..."
+              onChange={handleChange}
+              value={contactDetails.message}
             />
           </div>
           <div className="checkbox">
