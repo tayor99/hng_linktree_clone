@@ -29,4 +29,10 @@ export const links = [
     name: "Design books",
     link: "https://books.zuri.team/design-rules",
   },
+  {
+    id: "contact",
+    name: "Contact Me",
+    link: "/contact",
+    path: true,
+  },
 ];
